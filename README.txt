@@ -1,3 +1,13 @@
+Greetings,
+
+I am posting this source code in response to the proposal by Gary Johnson for a systematic list of the several top 500 supercomputer lists, see his post Erich Strohmaier and the TOP500: A List that’s taken on a life of its own . 
+
+Linear ranking is a powerful tool for pushing progress but it hasn't been all that consistently good at directing progress. With that in mind and because lists of lists seemed too complex for a classification problem, I computed the Pareto ranks of about 300 of the June 12 top 500 entries based on Total Cores, Rmax, Efficiency and Mflops/Watts. I only kept those entries that have all the relevant data.
+
+A null Pareto rank means that there is no other entry in the list that is better than this one in every aspect. An entry with a rank of 1 is only beaten on all grounds by entries of rank 0, etc. I counted 20 ranks, from 0 to 19.
+
+There are 20 computer systems with a null rank that basically have some bragging rights over the others, they are 1, 2, 4, 7, 8, 13, 18, 20, 84, 87, 99, 100, 101, 102, 103, 14, 121, 252, 253, 358.
+
 The program in fitness.c  computes the Pareto ranks of row feature vectors
 stored in its input file and write those same vectors along with their 
 respective Pareto ranks in the output file. The ranking algorithm is by
